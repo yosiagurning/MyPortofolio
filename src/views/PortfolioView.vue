@@ -48,6 +48,15 @@ export default {
           tech: 'C#',
           github: 'https://github.com/yosiagurning/Aplikasi-Perpustakaan.git',
           demo: 'null'
+        },
+        {
+          id: 6,
+          name: 'Clean Arsitektur Go',
+          imageUrl: 'UTS',
+          status: 'Mid-Semester Project for the Software Design Architecture course, built using the Golang programming language using Clean Architecture to facilitate future changes to a microservice architecture. The Clean architecture has been fully completed and is functional in the first branch. It was changed to a Microservice architecture in the second branch.',
+          tech: 'Go',
+          github: 'https://github.com/yosiagurning/UTS-RPL-APPL-11423049',
+          demo: 'null'
         }
       ]
     };
