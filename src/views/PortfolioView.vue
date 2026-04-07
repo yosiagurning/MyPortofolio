@@ -55,14 +55,13 @@ export default {
 }
 </script>
 <template>
-  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3">
+  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-slate-700 mx-3">
     <article data-page="about">
       <header>
         <div
-          class="text-2xl font-bold text-white mb-10 fadein-bot title-section flex items-center justify-center flex-col">
-          <!-- <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate"></div> -->
+          class="text-2xl font-bold text-slate-900 mb-10 fadein-bot title-section flex items-center justify-center flex-col">
           <h4>Past Project Experience</h4>
-          <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300">
+          <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-amber-600">
             Explore the projects I've worked on so far</h4>
         </div>
       </header>
@@ -71,21 +70,21 @@ export default {
           <div class="grid grid-cols-1 gap-4 pb-32 md:grid-cols-3 md:gap-3 xl:grid-cols-3 xl:gap-3 2xl:gap-5 fade-zoom-in">
             <div v-for="item in items" :key="item.id">
               <div
-                class="item-card flex flex-col items-center gap-2 rounded bg-[#1e1e1f] hover:bg-[#282828] border border-[#383838] rounded-xl text-amber-50 md:gap-3 px-5 py-5 lg:px-5 ">
+                class="item-card flex flex-col items-center gap-2 rounded bg-white hover:bg-slate-50 border border-slate-200 rounded-xl text-slate-700 md:gap-3 px-5 py-5 lg:px-5 shadow-sm">
                 <div class="flex h-12 w-12 items-center justify-center p-0 h-full w-full lg:p-0 zoom-in">
                   <img alt="HTML" loading="lazy" decoding="async" data-nimg="1" class="drop-shadow-xl rounded rounded-xl"
                     :src="'/img/portfolio-' + item.imageUrl + '.png'">
                 </div>
                 <div class="w-full flex flex-col gap-2 items-center text-sm md:text-base lg:text-lg">
-                  <div class="title-text font-medium text-secondary">{{ item.name }}
+                  <div class="title-text font-medium text-slate-900">{{ item.name }}
                   </div>
-                  <div class="w-full text-left text-[10px] text-[#c1c1c1] md:text-xs lg:text-sm">
+                  <div class="w-full text-left text-[10px] text-slate-600 md:text-xs lg:text-sm">
                     {{ item.status }}</div>
-                  <div class="w-full mt-4 text-normal text-sm text-left text-amber-200">
+                  <div class="w-full mt-4 text-normal text-sm text-left text-amber-700">
                     {{ item.tech }}
                   </div>
                   <div class="w-full flex justify-end">
-                    <div class="flex cursor-pointer items-end gap-2 text-primary">
+                    <div class="flex cursor-pointer items-end gap-2 text-slate-700">
                       <a v-if="item.github !== 'null'"
                         :href="item.github" target="_blank" rel="noreferrer"
                         title="View github repository" class="transition-all hover:text-accent">
@@ -116,12 +115,17 @@ export default {
 </div></template>
 
 <style>
+.item-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
 .item-card:hover {
-  transition: transform 0.3s ease;
   transform: translateY(-8px);
+  box-shadow: 0px 12px 32px -20px rgba(15, 23, 42, 0.25);
+  border-color: #cbd5e1;
 }
 svg:hover{
-  stroke: #ffdb70;
+  stroke: #d97706;
 }
 @keyframes fadeZoomIn {
   0% {
@@ -134,7 +138,6 @@ svg:hover{
   }
 }
 
-/* Menggunakan animasi pada elemen yang diinginkan */
 .fade-zoom-in {
   animation: fadeZoomIn 1s ease-in-out;
 }

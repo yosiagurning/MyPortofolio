@@ -1,5 +1,3 @@
-# portofolio-v2
-
 ## Project setup
 ```
 npm install

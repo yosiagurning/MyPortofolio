@@ -157,13 +157,13 @@ export default {
 </script>
 <template>
   <div
-    class="bg-[#1e1e1f] px-5 py-5 md:px-12 md:py-10 text-left border border-[#383838] rounded-3xl text-amber-50 mx-3 mb-5">
+    class="bg-white px-5 py-5 md:px-12 md:py-10 text-left border border-slate-200 rounded-3xl text-slate-700 shadow-sm mx-3 mb-5">
     <article data-page="about">
 
       <header>
-        <div class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
+        <div class="text-2xl font-bold text-slate-900 mb-5 fadein-bot title-section flex items-center">
           About Me &nbsp;
-          <div class="h-[1px] w-32 bg-amber-200 md:w-96 aos-init aos-animate" data-aos="zoom-in-left"
+          <div class="h-[1px] w-32 bg-amber-500 md:w-96 aos-init aos-animate" data-aos="zoom-in-left"
             data-aos-duration="600"></div>
         </div>
       </header>
@@ -189,25 +189,25 @@ If you are interested in collaborating with me, feel free to get in touch throug
     </article>
   </div>
 
-  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3">
+  <div class="px-5 py-5 md:px-12 md:py-10 text-left text-slate-700 mx-3">
     <article data-page="about">
       <header>
-        <div class="text-2xl font-bold text-white mb-5 fadein-bot title-section flex items-center">
-          <div class="h-[1px] w-10 bg-amber-200 md:w-20 aos-init aos-animate" data-aos="zoom-in-left"
+        <div class="text-2xl font-bold text-slate-900 mb-5 fadein-bot title-section flex items-center">
+          <div class="h-[1px] w-10 bg-amber-500 md:w-20 aos-init aos-animate" data-aos="zoom-in-left"
             data-aos-duration="600"></div>
           &nbsp; Skills
         </div>
       </header>
       <section>
         <div>
-          <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400 mb-5">
+          <ul class="flex flex-wrap text-sm font-medium text-center text-slate-600 mb-5">
             <li class="mr-2">
-              <button class="inline-block px-4 py-3 rounded-lg hover:text-white"
-                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 1 }" @click="activeTab = 1">Tech Stack</button>
+              <button class="inline-block px-4 py-3 rounded-lg hover:text-slate-900"
+                :class="{ 'text-amber-700 bg-amber-200 bg-opacity-10': activeTab === 1 }" @click="activeTab = 1">Tech Stack</button>
             </li>
             <li class="mr-2">
-              <button class="inline-block px-4 py-3 rounded-lg hover:text-white"
-                :class="{ 'text-amber-200 bg-amber-200 bg-opacity-10': activeTab === 2 }" @click="activeTab = 2">Tools</button>
+              <button class="inline-block px-4 py-3 rounded-lg hover:text-slate-900"
+                :class="{ 'text-amber-700 bg-amber-200 bg-opacity-10': activeTab === 2 }" @click="activeTab = 2">Tools</button>
             </li>
           </ul>
         </div>
@@ -225,7 +225,7 @@ If you are interested in collaborating with me, feel free to get in touch throug
                   <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">{{ item.name }}
                   </div>
                   <div
-                    class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm">
+                    class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-700 transition-all duration-300 md:text-xs lg:text-sm">
                     {{ item.status }}</div>
                 </div>
               </div>
@@ -246,7 +246,7 @@ If you are interested in collaborating with me, feel free to get in touch throug
                   <div class="tech font-medium text-secondary transition-all duration-300 translate-y-0 ">{{ item.name }}
                   </div>
                   <div
-                    class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-200 transition-all duration-300 md:text-xs lg:text-sm">
+                    class="status-tech opacity-0 absolute mt-5 text-[10px] text-amber-700 transition-all duration-300 md:text-xs lg:text-sm">
                     {{ item.status }}</div>
                 </div>
               </div>
