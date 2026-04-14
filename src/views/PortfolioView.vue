@@ -9,7 +9,7 @@ export default {
           name: 'Agrimatch',
           imageUrl: 'agrimatch',
           status: 'A mobile application developed using flutter, fast api, CNN and LLM to help novice farmers in starting farming developed with soil analysis technology and consultation with Gen AI',
-          tech: 'Flutter,Python',
+          tech: 'dart,Python',
           github: 'https://github.com/yosiagurning/AgrimatchAI.git',
           demo: 'null'
         },
@@ -18,7 +18,7 @@ export default {
           name: 'Partoba Frontend',
           imageUrl: 'partoba',
           status: 'A project that is built completely using Flutter and Laravel as the Frontend, this project is used by the Toba Regency KOPERINDAG Service in monitoring and setting prices in the market.',
-          tech: 'Laravel, Flutter',
+          tech: 'PHP, dart',
           github: 'https://github.com/yosiagurning/Frontend_Laravel.git',
           demo : 'null'
         },
@@ -56,6 +56,33 @@ export default {
           status: 'Mid-Semester Project for the Software Design Architecture course, built using the Golang programming language using Clean Architecture to facilitate future changes to a microservice architecture. The Clean architecture has been fully completed and is functional in the first branch. It was changed to a Microservice architecture in the second branch.',
           tech: 'Go',
           github: 'https://github.com/yosiagurning/UTS-RPL-APPL-11423049',
+          demo: 'null'
+        },
+        {
+          id: 7,
+          name: 'Warehouse Project',
+          imageUrl: 'warehouse',
+          status: 'Warehouse Management Systems play a crucial role in optimizing operations, reducing errors, and increasing overall productivity in supply chain processes Using Laravel Framework',
+          tech: 'PHP',
+          github: 'https://github.com/yosiagurning/warehouse-project',
+          demo: 'null'
+        },
+        {
+          id: '8',
+          name: 'DASI & DALIS LAST Project',
+          imageUrl: 'DASI',
+          status: 'Final project for the DASi & DALIS course to implementing concepts in data analysis and system development through a structured and collaborative approach',
+          tech: 'Python',
+          github: 'https://github.com/Hyzity/Kelompok-5-DASI-DALIS',
+          demo: 'null'
+        },
+        {
+          id: '9',
+          name: 'Laravel Field Booking',
+          imageUrl: 'field',
+          status: 'field booking website using the Laravel framework in completing the UAS for the Website Development 2 course at the Del Technology Institute',
+          tech: 'PHP, Javasvript',
+          github: 'https://github.com/yosiagurning/boking-lapangan-with-laravel-10',
           demo: 'null'
         }
       ]
