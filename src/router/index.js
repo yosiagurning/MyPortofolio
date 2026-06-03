@@ -6,42 +6,29 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
-    meta: { title: 'Home' }
+    meta: { title: 'Yosia Yehezkiel Gurning — Software Engineer' }
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('../views/AboutView.vue'),
-    meta: { title: 'About' }
-  },
-  {
-    path: '/portfolio',
-    name: 'portfolio',
-    component: () => import('../views/PortfolioView.vue'),
-    meta: { title: 'Portfolio' }
-  },
-  {
-    path: '/blog',
-    name: 'blog',
-    component: () => import('../views/BlogView.vue'),
-    meta: { title: 'Blog' }
-  },
-  {
-    path: '/read/:slug/:id',
-    name: 'articleDetail',
-    component: () => import('../views/ArticleView.vue'),
-    meta: { title: 'Blog' }
+    path: '/:catchAll(.*)',
+    redirect: '/'
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return { el: to.hash, behavior: 'smooth', top: 80 }
+    }
+    if (savedPosition) return savedPosition
+    return { top: 0 }
+  }
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title + ' - Yosia'; // Mengambil judul dari meta atau mengatur judul default jika tidak ada
-  next();
-});
+  document.title = to.meta.title || 'Yosia Yehezkiel Gurning'
+  next()
+})
 
 export default router
