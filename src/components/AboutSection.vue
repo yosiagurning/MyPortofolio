@@ -49,7 +49,7 @@
             </div>
             <div class="flex justify-between border-b border-white/5 py-2">
               <dt class="text-neutral-500 tracking-widest uppercase">Focus</dt>
-              <dd class="text-neutral-200">Backend · Mobile · AI</dd>
+              <dd class="text-neutral-200">Backend · Fullstack · Mobile · API · AI</dd>
             </div>
             <div class="flex justify-between border-b border-white/5 py-2">
               <dt class="text-neutral-500 tracking-widest uppercase">Languages</dt>
